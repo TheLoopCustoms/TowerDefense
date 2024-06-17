@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -8,6 +9,7 @@ public class EnemySpawner : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] private GameObject[] enemyPrefabs;
+    [SerializeField] private TextMeshProUGUI WaveText;
 
 
 
@@ -37,6 +39,7 @@ public class EnemySpawner : MonoBehaviour
     private void Start()
     {
         StartCoroutine(StartWave());
+        UpdateWaveUI();
     }
 
     private void Update()
@@ -79,6 +82,12 @@ public class EnemySpawner : MonoBehaviour
         timeSinceLastSpawn = 0f;
         currentWave++;
         StartCoroutine(StartWave());
+        UpdateWaveUI();
+    }
+
+    void UpdateWaveUI()
+    {
+        WaveText.text = "Wave: " + currentWave.ToString();
     }
 
     private void SpawnEnemy()

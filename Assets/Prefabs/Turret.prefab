@@ -387,7 +387,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1351836945547896832}
   - component: {fileID: 6799012055166183922}
-  - component: {fileID: 5084536236449107559}
   m_Layer: 0
   m_Name: Turret
   m_TagString: Untagged
@@ -436,18 +435,6 @@ MonoBehaviour:
   targetingRange: 3
   rotatoionSpeed: 100
   bps: 1
---- !u!114 &5084536236449107559
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4280703437308988187}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b04324e1300bbe49ad2e0033030a618, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &5021825525992833588
 GameObject:
   m_ObjectHideFlags: 0
@@ -581,6 +568,7 @@ GameObject:
   - component: {fileID: 822465864898020478}
   - component: {fileID: 4105975749531163545}
   - component: {fileID: 6044954505678197358}
+  - component: {fileID: 3392418528331124776}
   m_Layer: 5
   m_Name: UpgradeUI
   m_TagString: Untagged
@@ -672,6 +660,19 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &3392418528331124776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7010585764686245828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b04324e1300bbe49ad2e0033030a618, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouse_over: 0
 --- !u!1 &7139455394197529094
 GameObject:
   m_ObjectHideFlags: 0
